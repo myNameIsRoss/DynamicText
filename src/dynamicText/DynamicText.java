@@ -12,6 +12,21 @@ import javax.swing.JFrame;
 
 public class DynamicText extends JFrame implements Runnable {
 
+	public static String testString = "This is a test";
+	
+	public static void main(String args[]) {
+		
+		//DynamicText dT = new DynamicText();
+		
+		
+	}
+	
+	public DynamicText() {
+		
+		Thread t = new Thread(this);
+		t.start();
+	}
+	
 	public void paint(Graphics g) {
 		
 		
